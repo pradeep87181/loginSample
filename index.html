@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&family=Noto+Sans+Tamil&family=Poppins&family=Roboto:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #8bdef0;
+            
+        }
+        .box{
+            width:570px;
+            height:450px;
+            background-color: white;
+            margin-top: 10px;
+            padding: 40px;
+            font-size: 30px;
+            border-right: 35px solid #4286f5;
+        }
+        h4{
+            margin-bottom: 30px;
+            color:#5c8ee7;
+        }
+        .box .uname{
+            
+            margin-top: 25px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 60px;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: gray;
+            
+        
+        }
+        .uname input{
+            border-radius: 3px;
+           width: 100%;
+           height: 55px;
+           outline: 0;
+           background-color:lightgrey;
+           opacity: 0.5;
+           border: none;
+           padding: 10PX;
+        }       
+        .checkbox1{
+            margin-bottom: 0px;
+        } 
+        .forget{
+            margin-left: 65%;
+            font-size: 20px;
+            margin-top: -20px;
+            
+        }
+        a{
+            color:#5c8ee7;
+            text-decoration: none;
+        }
+        .me{
+            margin-left: 25px;
+            font-size:18px;
+            margin-top:-22px;
+        }
+        .button{
+            margin-top:25px;
+            width: 100%;
+            
+        }
+        button{
+            width: 100%;
+            height: 55px;
+            background-color: #5c8ee7;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+    </style>
+    <div class="box">
+        <h4>ACCOUNT LOGIN</h4>
+        <div class="uname">
+             <label>Username</label> 
+            <input type="text" id="name">
+        </div>
+        <div class="uname">
+            <label>Password</label>
+            <input type="password" id="pass">
+        </div>
+         <div class="checkbox1">
+            <input type="checkbox">
+        </div>
+        <div class="me">
+            <label>Remember Me</label>
+        </div>
+        <div class="forget">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="button">
+            <button onclick="m1()">Login</button>
+        </div>
+</div>
+<script>
+    function m1(){
+    let username=document.getElementById('name').value;
+    let password=document.getElementById('pass').value;
+
+    if(username=='Pradeep' && password=='Password'){
+        alert('Login Successfull');
+    }
+    else{
+        alert('Login Failed');
+    }
+}
+</script>
+</body>
+</html>
